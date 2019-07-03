@@ -167,7 +167,7 @@ class ElggRole extends ElggObject {
 					'inverse_relationship' => true
 				);
 				$options = array_merge($defaults, $options);
-				$users = elgg_get_entities_from_relationship($options);
+				$users = elgg_get_entities($options);
 				break;
 		}
 

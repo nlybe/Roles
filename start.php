@@ -44,11 +44,11 @@ function roles_init() {
 	elgg_register_plugin_hook_handler('register', 'all', 'roles_menus_permissions', 9999);
 	elgg_register_plugin_hook_handler('register', 'all', 'roles_menus_cleanup', 9999);
 
-	// Check for role configuration updates
-	if (elgg_is_admin_logged_in()) { // @TODO think through if this should rather be a role-based permission
-		run_function_once('roles_update_100_to_101');
-		elgg_register_event_handler('ready', 'system', 'roles_check_update', 1);
-	}
+	// Check for role configuration updates - moved to activate.php for Elgg 3.0
+	// if (elgg_is_admin_logged_in()) { // @TODO think through if this should rather be a role-based permission
+	// 	run_function_once('roles_update_100_to_101');
+	// 	elgg_register_event_handler('ready', 'system', 'roles_check_update', 1);
+	// }
 	
 	// Set up role-specific views, hooks and events, after all plugins are initialized
 	elgg_register_event_handler('ready', 'system', 'roles_hooks_permissions', 9999);

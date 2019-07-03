@@ -5,7 +5,7 @@
  * @package ElggRoles
  */
 
-$english = array(
+return [
 	
 	'item:object:role' => 'Roles',
 
@@ -26,6 +26,4 @@ $english = array(
 
 	'roles:settings:automatic_reset' => 'Automatic reset',
 	'roles:settings:automatic_reset:help' => 'Delete all roles when the plugin is deactivated',
-);
-
-add_translation("en", $english);
+];

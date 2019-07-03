@@ -1,5 +1,5 @@
 <?php
-
+ 
 if (elgg_get_plugin_setting('automatic_reset', 'roles')) {
 	// Delete all role objects upon plugin deactivate if the plugin setting says so
 	$roles = roles_get_all_roles();

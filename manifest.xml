@@ -3,10 +3,10 @@
 
 	<name>Roles</name>
 	<id>roles</id>
-	<version type="dist">2.1.0</version>
+	<version type="dist">3.1.0</version>
 
 	<blurb>User roles</blurb>
-	<description>Implements a generic roles framework to allow creating custom user roles.</description>
+	<description>Implements a generic roles framework to allow creating custom user roles. Updated version for Elgg 3.x compatibility.</description>
 	<website>http://www.arckinteractive.com/</website>
 
 	<author>Andras Szepeshazi - Arck Interactive, LLC</author>
@@ -16,10 +16,10 @@
 	<copyright>(c) Arck Interactive, LLC 2012</copyright>
 	<license>GNU General Public License version 2</license>
 
-	<requires>
-		<type>elgg_release</type>
-		<version>1.11</version>
-	</requires>
+    <requires>
+        <type>elgg_release</type>
+        <version>3.0</version>
+    </requires>
 	
 	<activate_on_install>false</activate_on_install>
 	

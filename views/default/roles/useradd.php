@@ -22,11 +22,12 @@ if (is_array($all_roles) && !empty($all_roles)) {
 		<p>
 			<?php echo elgg_echo('user:role:label'); ?>:
 			<?php
-			echo elgg_view("input/dropdown", array(
+			echo elgg_view_field([
+				'#type' => 'dropdown',
 				'name' => 'role',
 				'value' => '',
 				'options_values' => $roles_options
-			));
+			]);
 			?>
 		</p>
 	</div>

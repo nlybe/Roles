@@ -30,7 +30,7 @@ class Db implements \Elgg\Roles\DbInterface {
 			),
 			'limit' => 1,
 		);
-		$role_array = elgg_get_entities_from_metadata($options);
+		$role_array = elgg_get_entities($options);
 		return $role_array ? $role_array[0] : false;
 	}
 
@@ -45,7 +45,7 @@ class Db implements \Elgg\Roles\DbInterface {
 			'relationship_guid' => $user->guid,
 			'limit' => 1,
 		);
-		$roles = elgg_get_entities_from_relationship($options);
+		$roles = elgg_get_entities($options);
 		return $roles ? $roles[0] : false;
 	}
 
